@@ -22,7 +22,7 @@ time, mark, audio, video {
   list-style: none;
 }
 body {
-  line-height: 1;
+  line-height: 1.1;
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
@@ -106,23 +106,6 @@ a {
     user-select: none;
 }
 
-#nav {
-	height: 35px;
-	width: 100%;
-	background: #7d7e7d; /* Old browsers */
-	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	z-index: 0;
-}
-
 #triangle {
 	position: absolute;
 }
@@ -148,14 +131,12 @@ a {
 }
 
 .a1 {
-	display: block;
-	width: 84.5%;
+	display: inline-block;	
 	position: relative;
 	left: 190px;
-	top: 40px;
+	top: 20px;
 	margin: 10px;
 	margin-top: 0px;
-	z-index: -1;
 	background-color: #3D8599;
 	padding: 5px;
 	border-radius: 5px;
@@ -169,9 +150,6 @@ a {
 	background: #00FFAA; /* Firefox */
 }
 
-#toggleMenu {
-	display: none;
-}
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
@@ -188,33 +166,9 @@ and (max-width : 320px) {
 		position: absolute;
 		border-top: inherit;
 	}
-	#toggleMenu {
-		display: inline-block;
-		height: 100%;
-	}
-	#menu {
-		top: 6px;
-		left: 4px;
-		position: relative;
-	}
-	#menu a:visited {
-		color: #ccc;
-	}
-	#menuIcon {
-		position: absolute;
-		float: right;
-		right: 4px;
-		top: 6px;
-	}
-	#nav {
-		display: none;
-	}
-	#nav  ul {
-		margin-top: 1px;
-	}
 	.a1 {
 		width: 93.5%;
-		top: 40px;
+		top: 20px;
 		left: 0;
 		margin: 4px;
 	}
@@ -234,15 +188,9 @@ and (max-width : 480px) {
 		border-right: 65px solid transparent;
 		border-top: 65px solid #CC144F;
 	}
-	#nav {
-		height: 24px;
-	}
-	#nav  ul {
-		margin-top: 2px;
-	}
 	.a1 {
 		width: 73.5%;
-		left: 80px;
+		left: 60px;
 		top: 25px;
 	}
 }
@@ -258,15 +206,9 @@ and (max-width : 767px) {
 		border-right: 95px solid transparent;
 		border-top: 95px solid #CC144F;
 	}
-	#nav {
-		height: 27px;
-	}
-	#nav  ul {
-		margin-top: 3px;
-	}
 	.a1 {
 		width: 72.5%;
-		left: 110px;
+		left: 90px;
 		top: 30px;
 	}
 }
@@ -282,73 +224,19 @@ and (max-width : 1024px) {
 		border-right: 120px solid transparent;
 		border-top: 120px solid #CC144F;
 	}
-	#nav {
-		height: 32px;
-	}
-	#nav  ul {
-	height: 100%;
-	margin-top: 4px;
-	}
 	.a1 {
 		width: 78.5%;
-		left: 140px;
+		left: 120px;
 		top: 35px;
 	}
-}
-
-#nav  ul {
-	margin-top: 0.49%;
-}
-
-.menu {
-	color: #ccc;
-	float: right;
-	right: 5px;
-	margin-left: 2.5px;
-	margin-right: 5px;
-}
-
-.menu a:visited {
-	color: #ccc;
-}
-
-#name {
-	display: inline-block;
-	color: #ccc;
-	left: 5px;
-	position: relative;
-}
-
-#name a:visited {
-	color: #ccc;
-}
-
-#settings > a:nth-child(1) > img:nth-child(1) {
-	height: 20px;
 }
 
 #profilePic {
 	height: 50%;
 	position: relative;
 	left: 10px;
-	top: -70%;
+	top: -90%;
 	border: 2px solid;
 	border-radius: 2px;
 	border-color: #ccc;
-}
-
-#search {
-	position: relative;
-	top: -7px;
-	border-radius: 15px;
-	right: 3px;
-}
-
-input[text] {
-	left: 2px;
-  box-sizing: border-box;
-}
-
-#searchIcon {
-	height: 20px;
 }
