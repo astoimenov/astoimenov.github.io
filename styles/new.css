@@ -1,0 +1,354 @@
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: Segoe UI, Verdana;
+  list-style: none;
+}
+body {
+  line-height: 1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: #ccc;
+}
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input, select {
+    vertical-align: middle;
+}
+/* --- */
+
+body {
+	background-color: #4BC6E8;
+}
+
+h2 {
+	font-size: 1.7em;
+	font-weight: bold;
+	margin: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#main {
+	position:fixed;
+	width: 100%;
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#nav {
+	height: 35px;
+	width: 100%;
+	background: #7d7e7d; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+}
+
+#triangle {
+	position: absolute;
+}
+
+#triangleBig {
+	margin: 0;
+	width: 0; 
+	height: 0; 
+	border-right: 200px solid transparent;
+	border-top: 200px solid #FF4A40;
+	left: 0px;
+	top: 0px;
+}
+
+#triangleSmall {
+	width: 0; 
+	height: 0; 
+	border-right: 170px solid transparent;
+	border-top: 170px solid #CC144F;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.a1 {
+	display: block;
+	width: 84.5%;
+	position: relative;
+	left: 190px;
+	top: 40px;
+	margin: 10px;
+	margin-top: 0px;
+	z-index: -1;
+	background-color: #3D8599;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+::selection {
+	background: #00FFAA; /* Safari */
+	}
+
+::-moz-selection {
+	background: #00FFAA; /* Firefox */
+}
+
+#toggleMenu {
+	display: none;
+}
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	#triangleBig {
+		height: 40px;
+		width: 100%;
+		background-color: #FF4A40;
+		border-top: inherit;
+	}
+	#triangleSmall {
+		height: 30px;
+		width: 100%;
+		background-color: #CC144F;
+		position: absolute;
+		border-top: inherit;
+	}
+	#toggleMenu {
+		display: inline-block;
+		height: 100%;
+	}
+	#menu {
+		top: 6px;
+		left: 4px;
+		position: relative;
+	}
+	#menu a:visited {
+		color: #ccc;
+	}
+	#menuIcon {
+		position: absolute;
+		float: right;
+		right: 4px;
+		top: 6px;
+	}
+	#nav {
+		display: none;
+	}
+	#nav  ul {
+		margin-top: 1px;
+	}
+	.a1 {
+		width: 93.5%;
+		top: 40px;
+		left: 0;
+		margin: 4px;
+	}
+	#profilePic {
+		display: none;
+	}
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 321px)
+and (max-width : 480px) {
+	#triangleBig {
+		border-right: 80px solid transparent;
+		border-top: 80px solid #FF4A40;
+	}
+	#triangleSmall {
+		border-right: 65px solid transparent;
+		border-top: 65px solid #CC144F;
+	}
+	#nav {
+		height: 24px;
+	}
+	#nav  ul {
+		margin-top: 2px;
+	}
+	.a1 {
+		width: 73.5%;
+		left: 80px;
+		top: 25px;
+	}
+}
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 481px)
+and (max-width : 767px) {
+	#triangleBig {
+		border-right: 115px solid transparent;
+		border-top: 115px solid #FF4A40;
+	}
+	#triangleSmall {
+		border-right: 95px solid transparent;
+		border-top: 95px solid #CC144F;
+	}
+	#nav {
+		height: 27px;
+	}
+	#nav  ul {
+		margin-top: 3px;
+	}
+	.a1 {
+		width: 72.5%;
+		left: 110px;
+		top: 30px;
+	}
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) {
+	#triangleBig {
+		border-right: 150px solid transparent;
+		border-top: 150px solid #FF4A40;
+	}
+	#triangleSmall {
+		border-right: 120px solid transparent;
+		border-top: 120px solid #CC144F;
+	}
+	#nav {
+		height: 32px;
+	}
+	#nav  ul {
+	height: 100%;
+	margin-top: 4px;
+	}
+	.a1 {
+		width: 78.5%;
+		left: 140px;
+		top: 35px;
+	}
+}
+
+#nav  ul {
+	margin-top: 0.49%;
+}
+
+.menu {
+	color: #ccc;
+	float: right;
+	right: 5px;
+	margin-left: 2.5px;
+	margin-right: 5px;
+}
+
+.menu a:visited {
+	color: #ccc;
+}
+
+#name {
+	display: inline-block;
+	color: #ccc;
+	left: 5px;
+	position: relative;
+}
+
+#name a:visited {
+	color: #ccc;
+}
+
+#settings > a:nth-child(1) > img:nth-child(1) {
+	height: 20px;
+}
+
+#profilePic {
+	height: 50%;
+	position: relative;
+	left: 10px;
+	top: -70%;
+	border: 2px solid;
+	border-radius: 2px;
+	border-color: #ccc;
+}
+
+#search {
+	position: relative;
+	top: -7px;
+	border-radius: 15px;
+	right: 3px;
+}
+
+input[text] {
+	left: 2px;
+  box-sizing: border-box;
+}
+
+#searchIcon {
+	height: 20px;
+}
